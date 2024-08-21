@@ -1,0 +1,72 @@
+/*  Autor: Claudia Souza
+estilo de fondo negro para el formulario,
+   - borde blanco para recuadro  de datos personales
+   - fondo gris oscuro para el contenedor de datos personales
+   - letras blancas
+   - campos gris más claro
+
+   botones amarillos con letras negras*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#formu {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#datos_formu{
+    background-color: rgb(59, 58, 58);
+    border-color: white;
+    border-width: 100px;
+    width: 300px;
+    padding: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.dato {
+    padding-left: 20px;
+}
+
+.dato input{
+    width: 90%;
+    height: 25px;
+    background-color:darkgrey;
+    border-radius: 5px;
+}
+
+button{
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    width: 30%;
+    margin-top: 10px;
+    /* para centrar los botones*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+#envio{
+    width: 87%;
+    margin-bottom: 5px;
+}

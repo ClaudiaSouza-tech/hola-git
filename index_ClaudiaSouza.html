@@ -1,0 +1,55 @@
+<!-- Formulario2 tendra un formulario con estilo de color y divisiones por lo que usaré CSS-->
+<!doctype html>
+<html>
+   <head><!--Contiene información meta un contenedor de metadatos-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Claudia Souza">
+        <link rel="stylesheet" href="css/estilo_f2.css">
+        <title>Formulario web 2 - Color con CSS y divisiones</title><!--El elemento <title> especifica un título para el documento-->
+</head>
+<body><!--El elemento <body> contiene el contenido visible de la página-->
+    <div id="formu">
+        <!--El elemento <h1> define un encabezado grande-->
+        <h1>Formulario de datos personales</h1><br>
+        <!-- Creación de un formulario-->
+       <form action="#">   
+           <div id="datos_formu">
+            <!-- Para ingresar Nombre, apellido, email del usuario-->
+              <div class="dato"> 
+                <label for="nombre_u">Nombre:</label><br> 
+                <input id="nombre_u" type="text" name="nombre"> 
+                <br><br>
+              
+                <label for="apellido_u">Apellido:</label><br>
+                <input id="apellido_u" type="text" name="apellido">
+                <br><br>
+              
+                <label for="email_u">Email:</label><br>
+                <input id="email_u" type="text" name="email">
+                <br><br>
+              <!-- Para ingresar fecha-->
+                <label for="fecha_n">Fecha de Nacimiento:</label><br>
+                <input id= "fecha_n" type="date" name="fecha_nac"/>
+                <br><br>
+              
+                <label for="reside_u">País de Residencia:</label><br>
+                <input id="reside_u" type="text" name="residencia">
+                <br><br>
+              
+              </div>
+              <div>
+                <!-- botón para envío de información-->
+                <button id="envio">Enviar</button>
+              
+              </div>
+            </div>
+              <div> <!--Botones para elegir entre dos estilos: el común y el de alto contraste (accesibilidad)-->
+                <button class="boton">Estilo</button>
+                <button class="boton">Estilo de alto contraste</button>
+              </div>      
+              <br>
+       </form>
+     </div>  
+</body>
+</html>
