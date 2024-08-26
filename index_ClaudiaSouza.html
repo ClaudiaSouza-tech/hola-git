@@ -1,12 +1,17 @@
-<!-- Formulario2 tendra un formulario con estilo de color y divisiones por lo que usaré CSS-->
+<!-- Formulario2 tendra un formulario con estilo de color con contraste por lo que usaré estilo2.CSS-->
 <!doctype html>
 <html>
    <head><!--Contiene información meta un contenedor de metadatos-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Claudia Souza">
-        <link rel="stylesheet" href="css/estilo.css">
-        <title>Formulario web 2 - Color con CSS y divisiones</title><!--El elemento <title> especifica un título para el documento-->
+        <!-- Enlaza los archivos css -->
+        <link id="estilo1" rel="stylesheet" type="text/css" href="css/estilo1.css">
+        <link id="estilo2" rel="stylesheet" type="text/css" href="css/estilo2.css" disabled>
+
+        <!-- Enlaza el archivo JavaScript -->
+        <script src="js/cambiarEstilo.js"></script>
+        <title>Formulario para envío de emails - Con estilo</title><!--El elemento <title> especifica un título para el documento-->
 </head>
 <body><!--El elemento <body> contiene el contenido visible de la página-->
     <div id="formu">
@@ -40,16 +45,16 @@
               </div>
               <div>
                 <!-- botón para envío de información-->
-                <button id="envio">Enviar</button>
+                <button class="boton" type="button">Enviar</button>
               
               </div>
             </div>
-              <div> <!--Botones para elegir entre dos estilos: el común y el de alto contraste (accesibilidad)-->
-                <button class="boton">Estilo</button>
-                <button class="boton">Estilo de alto contraste</button>
+              <div> <!--Botones para elegir entre dos estilos: sin contraste y el de alto contraste (accesibilidad)-->
+                <button class="boton" type="button" onclick="cambiarEstilo('estilo1')">Estilo SIN contraste</button>
+                <button class="boton" type="button" onclick="cambiarEstilo('estilo2')">Estilo CON constraste</button>
               </div>      
               <br>
        </form>
-     </div>  
+     </div>       
 </body>
 </html>
