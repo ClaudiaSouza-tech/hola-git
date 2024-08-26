@@ -1,0 +1,88 @@
+/*  Autor: Claudia Souza
+ Corresponde a un formulario de envío de emails, estilo de fondo negro para el formulario,
+   - borde blanco para recuadro  de datos personales
+   - fondo gris oscuro para el contenedor de datos personales
+   - letras blancas
+   - campos gris más claro
+   - celeste cuando el campo tiene el foco
+   - botón Enviar celeste con letras negras
+   - boton de estilo con contraste, nos desvía a un formulario con estilo2.css*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#formu {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(236, 234, 234);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#datos_formu{
+    background-color: white;
+    border-width: 1px;
+    width: 300px;
+    padding: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+#datos_formu{
+    border-style:solid;
+    border-color: grey ;
+}
+
+
+
+.dato {
+    padding-left: 20px;
+}
+
+.dato input{
+    width: 90%;
+    height: 25px;
+    background-color:white;
+    border-color: darkgrey;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: rgb(207, 235, 243);
+}
+
+input[type="text"]
+{
+  text-transform: capitalize;
+}
+
+.boton{
+    background-color: rgb(159, 222, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+    width: 30%;
+    margin-top: 10px;
+    /* para centrar los botones*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
